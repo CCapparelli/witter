@@ -1,0 +1,69 @@
+/* private css configuration related to index.html 
+   elements, classes, ids, pseudos, etc.
+*/
+.copyright {
+   color: var(--colorWB5);
+}
+.copyright .author {
+   color: var(--colorWB4);
+   font-weight: bolder;
+}
+.headerLogo {
+   height: var(--iconSizeM);
+}
+
+.search {
+   width: 80%;
+}
+
+aside {
+
+   padding: var(--spaceIn);
+}
+.left {
+   background-color: var(--colorWB4);
+}
+.news {
+   background-color: var(--colorWB5);
+   border-radius: var(--spaceIn);
+}
+.news, .newsList, .newsItemInfo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.newsList {
+   /* width: 100%; */
+   justify-content: start;
+}
+.newsItem {
+   width: 100%;
+   padding: var(--spaceIn) var(--spaceMin);
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.newsItemInfo {
+   align-items: start;
+   font-size: var(--textSizeS);
+}
+.newsTitle {
+   font-size: var(--textSize);
+   font-weight: bold;
+}
+.newsItemInfo p {
+   padding: 0;
+   text-align: start;
+}
+.left, .right {
+   width: 500px;
+}
+.posts {
+   width: 100%;
+   overflow-y: auto;
+}
+.post {
+   width: 100%;
+   /* height: 1000px; */
+}
+
