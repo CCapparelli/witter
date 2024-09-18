@@ -31,6 +31,12 @@
     --colorWhitish: rgb(248, 249, 250); 
     --colorBlackish: rgb(33, 37, 41); 
 
+    /* client*/
+    --clientBlue: #1DA1F2;
+    --clientGrayDark: #657786;
+    --clientGrayLight: #AAB8C2;
+    --clientGrayLightX: #E1E8ED;
+
     --colorWhite: white;
     --colorSilver: silver;
     --colorGray: gray;
@@ -39,15 +45,6 @@
     --colorLime: lime;
     --colorCyan: cyan;
     --colorYellow: yellow;
-
-    /* blue */
-    --color1: #ADE8F4; 
-    --color2: #90E0EF; 
-    --color3: #48CAE4; 
-    --color4: #00B4D8; 
-    --color5: #0096C7; 
-    --color6: #0077B6; 
-    --color7: #023E8A; 
 
     /* orange */
     --color1: #FAA307; 
@@ -66,6 +63,15 @@
     --color5: #40916C; 
     --color6: #2D6A4F; 
     --color7: #1B4332;
+
+    /* blue */
+    --color1: #ADE8F4; 
+    --color2: #90E0EF; 
+    --color3: #48CAE4; 
+    --color4: #00B4D8; 
+    --color5: #0096C7; 
+    --color6: #0077B6; 
+    --color7: #023E8A; 
 
     /* gray */
     --colorWB1: rgb(233, 236, 239); 
@@ -92,6 +98,7 @@
     
     --iconSize: 32px; 
     --iconSizeS: 24px; 
+    --iconSizeSX: 16px; 
     --iconSizeM: 36px; 
     --iconSizeL: 48px; 
     --iconSizeLX: 64px; 

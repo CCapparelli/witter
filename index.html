@@ -22,11 +22,17 @@
 </head>
 <body>
     <header>
-        <img class="headerLogo" src="src/img/logo.png" alt="logo" title="logo">
-        <p>Página Inicial</p>
-        <div class="search">
-            <i class="fa-solid fa-magnifying-glass"  alt="search" title="Search"></i>
-            <input class="searchInput" type="text" placeholder="Pesquise por...">
+        <div class="headerPC">
+            <img class="headerLogo" src="src/img/logo.png" alt="logo" title="logo">
+            <p>Página Inicial</p>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"  alt="search" title="Search"></i>
+                <input class="searchInput" type="text" placeholder="Pesquise por...">
+            </div>
+        </div>
+        <div class="headerMobile">
+            <img class="headerMobileAuthor" src="src/img/authors/Jessie.png" alt="">
+            <img class="headerMobileLogo" src="src/img/logo.png" alt="logo" title="logo">
         </div>
     </header>
 
@@ -45,14 +51,14 @@
                         <li><i class="fa-solid fa-ellipsis"></i> Mais</li>
                     </ul>
                 </nav>
-                <button class="navButton">Twitter</button>
+                <button class="navButton">Tweettar</button>
             </div>
 
             <div class="bottomItems">
                 <div class="userItems">
                     <div class="userItem">
-                        <img src="" alt="">
-                        <div>
+                        <img class="userImage" src="src/img/authors/Jessie.png" alt="">
+                        <div class="userInfo">
                             <p class="userName">Dark</p>
                             <p class="userId">@Dark</p>
                         </div>
@@ -64,35 +70,59 @@
 
         <section class="posts">
             <div class="post">
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-                <p>a</p>
-
+                <div class="postHeader">
+                    <img class="postAuthorImage" src="src/img/authors/Jessie.png" alt="">
+                    <div class="postInfo">
+                        <p class="postAuthor">Post author</p>
+                        <p class="postTitle">Title</p>
+                    </div>
+                </div>
+                <p class="postTags">#tag1 #tag2 ...</p>
+                <img class="postImage" src="src/img/posts/netbook.jpg" alt="">
+                <div class="postOptions">
+                    <i class="fa-solid fa-comment postOption" href="#"></i>
+                    <i class="fa-solid fa-refresh postOption" href="#"></i>
+                    <i class="fa-solid fa-heart postOption liked" href="#"></i>
+                    <i class="fa-solid fa-upload postOption" href="#"></i>
+                </div>
             </div>
+
+            <div class="post">
+                <div class="postHeader">
+                    <img class="postAuthorImage" src="src/img/authors/Jessie.jpg" alt="">
+                    <div class="postInfo">
+                        <p class="postAuthor">Post author</p>
+                        <p class="postTitle">Title</p>
+                    </div>
+                </div>
+                <p class="postTags">#tag1 #tag2 ...</p>
+                <img class="postImage" src="src/img/posts/pets.jpg" alt="">
+                <div class="postOptions">
+                    <i class="fa-solid fa-comment postOption" href="#"></i>
+                    <i class="fa-solid fa-refresh postOption" href="#"></i>
+                    <i class="fa-solid fa-heart postOption liked" href="#"></i>
+                    <i class="fa-solid fa-upload postOption" href="#"></i>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="postHeader">
+                    <img class="postAuthorImage" src="src/img/authors/neoMatrix.jpg" alt="">
+                    <div class="postInfo">
+                        <p class="postAuthor">Post author</p>
+                        <p class="postTitle">Title</p>
+                    </div>
+                </div>
+                <p class="postTags">#tag1 #tag2 ...</p>
+                <img class="postImage" src="src/img/posts/gaming.jpg" alt="">
+                <div class="postOptions">
+                    <i class="fa-solid fa-comment postOption" href="#"></i>
+                    <i class="fa-solid fa-refresh postOption" href="#"></i>
+                    <i class="fa-solid fa-heart postOption liked" href="#"></i>
+                    <i class="fa-solid fa-upload postOption" href="#"></i>
+                </div>
+            </div>
+
         </section>
         
         <aside class="right">
@@ -131,7 +161,6 @@
                         </div>
                         <i class="fa-solid fa-ellipsis"></i>
                     </div>
-
                 </div>
             </div>
         </aside>
@@ -140,15 +169,13 @@
     <footer class="footer">
         <nav>
             <ul>
-                <li><i class="fa-solid fa-home" href="#"></i></li>
-                <li><i class="fa-solid fa-lock" href="#"></i></li>
-                <li><i class="fa-solid fa-tag" href="#"></i></li>
-                <li><i class="fa-solid fa-plus" href="#"></i></li>
+                <li><i class="fa-solid fa-home postOption"></i></li>
+                <li><i class="fa-solid fa-hashtag postOption"></i></li>
+                <li><i class="fa-solid fa-bell postOption"></i></li>
+                <li><i class="fa-solid fa-envelope postOption"></i></li>
             </ul>  
         </nav>
         <p class="copyright">Direitos reservados - <span class=author>SENAI</span>, 2024.</p>
     </footer>
-
-    <script src="src/js/index.js"></script>
 </body>
 </html>

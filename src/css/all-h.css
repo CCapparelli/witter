@@ -7,14 +7,13 @@ body, header, footer {
     color: var(--colorWB1);
 }
 
-body {
+body, header {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--colorWB6); 
-    /* animation: bgColor 3s; */
+    background-color: var(--colorBlack); 
 }
 main {
     width:100%;
@@ -23,21 +22,36 @@ main {
     height: 100vh;
 }
 
-header, footer, .search {
+.headerPC, .headerMobile, footer, .search {
     width: 100%;
-    background-color: var(--colorWB7); 
-
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-header {
+.headerPC, .headerMobile {
+    background-color: var(--colorBlack);
     position: sticky;
     top: 0;
     z-index: 99999;
-    height: auto;
 }
+.headerMobile {
+    padding: var(--spaceIn);
+    display: none;
+}
+.headerMobileAuthor {
+    width: var(--iconSize);
+    height: var(--iconSize);
+    padding: var(--spaceIn);
+    border-radius: var(--spaceOut);
+    position: absolute;
+    left: var(--spaceIn);
+ }
+.headerMobileLogo {
+    width: var(--iconSizeSX);
+    height: var(--iconSizeSX);
+ }
 header p {
     width: 100%;
     padding: 0;
@@ -57,10 +71,10 @@ header p {
     margin: var(--spaceMin) var(--spaceIn2);
 
     border-radius: var(--spaceIn);
-    background-color: var(--colorWB6);
+    background-color: var(--colorBlack);
     font-size: var(--textSizeL);
     transition: var(--transition);
-
+    background-color: var(--colorWB7);
 }
 .search i {
     padding: var(--spaceIn);
@@ -72,15 +86,18 @@ header p {
     padding: var(--spaceIn);
     font-size: var(--textSizeL);
     color: var(--colorWB5);
-    background-color: var(--colorWB6);
+    background-color: var(--clientGray);
     outline: none;
     border: none;
 }
-.search i:hover, .search input:focus {
-    color: var(--colorWB2);
+.search i:hover {
+    color: var(--clientBlue);
 }
 .search i:active {
-    color: var(--colorCyan)
+    color: var(--coloWhite)
+}
+.search input:focus {
+    color: var(--coloWhite)
 }
 
 
@@ -88,12 +105,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-footer i {
-    padding: var(--spaceIn);
-    color: var(--color4);;
-    border: 2px solid var(--color4);;
-    border-radius: var(--spaceIn);
-}
+
 footer p {
     padding: var(--spaceIn) 0;
     /* justify-content: center; 
@@ -127,52 +139,28 @@ aside nav ul {
 aside nav ul li {
     padding: 10px;
     text-decoration: none;
+    border: none;
+    border-radius: var(--spaceOut);
 }
 aside nav ul li:hover {
     font-weight: bold;
-    background-color: var(--color6);
+    color: var(--clientBlue);
+    background-color: var(--colorWB7);
     transition: var(--transition);
 }
 
 footer nav {
     width: 100%;
-    justify-content: center;
-    background-color: var(--color6);
     display: none;
 }
 footer nav ul {
     padding: var(--spaceIn);
+    display: flex;
     justify-content: space-around;
 }
 footer i:hover {
-    background-color: var(--colorWhitish);
+    color: var(--clientBlue);
     transition: var(--transition);
-}
-
-table {
-    border-collapse: collapse;
-}
-td, th {
-    padding: var(--spaceIn);
-    color: var(--color4);
-    width: 100px;
-    border: 1px solid var(--colorBlackish);
-}
-th {
-    color: var(--colorClient3);
-    background-color: var(--color4);
-}
-td {
-    color: var(--colorBlackish);
-    text-align: center;
-}
-td:hover {
-    border-bottom: 3px solid var(--colorWhitish);
-    background-color: var(--color2);
-    cursor: pointer;
-}
-td:active {
-    background-color: var(--colorWhitish);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -183,12 +171,7 @@ p {
     text-align: justify;
     padding-top: var(--spaceIn);
 }
-/* button {
-    padding: 5px var(--spaceIn);
-    color: var(--colorWhitish);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-} */
-
+i {
+   cursor: pointer;
+}
 

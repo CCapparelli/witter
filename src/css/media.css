@@ -19,21 +19,17 @@
 
 /* mobile - defaults to portrait */
 @media screen and (max-width: 480px) and (orientation: portrait) {
-    #btnMenu, aside {
+    .left, .right, .headerPC {
         display: none;
     }
-    footer nav {
+    footer nav, .headerMobile {
+        width: 100%;
         display: flex;
     }
 }	
 /* mobile - landscape */
 @media screen and (max-height: 480px) and (orientation: landscape) {
-    #btnMenu, aside {
-        display: flex;
-    }
-    footer nav {
-        display: none;
-    }
+
 }	
 
 /* tablet - defaults to ??? */
